@@ -1,0 +1,38 @@
+{
+  "name": "react-app",
+  "version": "1.0.0",
+  "description": "Sample Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "",
+    "start": "./node_modules/.bin/webpack-dev-server"
+  },
+  "keywords": [
+    "es6",
+    "react",
+    "redux"
+  ],
+  "author": "Vignesh",
+  "license": "ISC",
+  "dependencies": {
+    "react": "15.4.2",
+    "react-dom": "15.4.2",
+    "react-redux": "4.4.5",
+    "react-router": "2.8.1",
+    "redux": "3.6.0"
+  },
+  "devDependencies": {
+      "babel-cli": "6.18.0",
+      "babel-register": "6.18.0",
+      "babel-loader": "^6.2.4",
+      "babel-preset-es2015": "6.16.0",
+      "babel-preset-react": "6.16.0",
+      "babel-preset-stage-0": "6.16.0",
+      "chai": "3.5.0",
+      "chai-jsx": "1.0.1",
+      "jsdom": "9.4.1",
+      "mocha": "3.0.2",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.3.0"
+  }
+}
