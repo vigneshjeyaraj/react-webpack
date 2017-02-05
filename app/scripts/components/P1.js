@@ -1,5 +1,4 @@
 import {Component} from 'react';
-import '../../styles/components/_p1.scss'
 
 export class P1 extends Component {
     render() {
