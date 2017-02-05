@@ -1,15 +1,10 @@
-const {render} = ReactDOM;
+import React from 'react'
+import { render } from 'react-dom'
+import { P1 } from './app/scripts/components/P1'
 
-const style = {
-  backgroundColor: "orange",
-  color: "white",
-  fontFamily: "verdana"
-}
+window.React = React
 
 render(
-  <h1 id='title'
-      className='header'
-      style={style}>Hello World
-  </h1>,
+  <P1 />,
   document.getElementById('root')
 );

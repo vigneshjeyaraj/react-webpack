@@ -21,6 +21,16 @@ module.exports = {
                 query: {
                     presets: ["es2015", "react", "stage-0"]
                 }
+            },
+            {
+                test: /\.json$/,
+                exclude: /(node_modules)/,
+                loader: 'file-loader'
+            },
+            {
+                test: /\.scss$/,
+                exclude: /(node_modules)/,
+                loader: 'style-loader!css-loader!autoprefixer-loader!sass-loader'
             }
         ]
     }
