@@ -1,0 +1,51 @@
+@import "border_box";
+@import "clearfix";
+
+@mixin custom_grid (
+    $name,
+    $gutter: 15px,
+    $columns: 12,
+    $sizes: (
+        ('xs', 0),
+        ('sm', 768px),
+        ('md', 992px),
+        ('lg', 1200px)
+    )
+) {
+    @each $size in $sizes {
+        $size-name: nth($size, 1);
+        $size-px: nth($size, 2);
+        @media (min-width: $size-px) {
+            %#{$name}-left-#{$size-name} {
+                float: left;
+            }
+
+            .#{$name}-#{$size-name}-hidden {
+                display: none;
+            }
+
+            .#{$name}-#{$size-name}-visible {
+                display: inherit;
+            }
+
+            @for $column from 0 through $columns {
+                .#{$name}-col-#{$size-name}-#{$column} {
+                    @extend %#{$name}-left-#{$size-name};
+                    width: percentage($column / $columns);
+                }
+
+                .#{$name}-col-#{$size-name}-pull-#{$column} {
+                    right: percentage($column / $columns);
+                }
+
+                .#{$name}-col-#{$size-name}-push-#{$column} {
+                    left: percentage($column / $columns);
+                }
+
+                .#{$name}-col-#{$size-name}-offset-#{$column} {
+                    margin-left: percentage($column / $columns);
+                }
+            }
+        }
+    }
+}

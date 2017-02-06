@@ -12,6 +12,10 @@
     "react",
     "redux"
   ],
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/vigneshjeyaraj/react-webpack.git"
+  },
   "author": "Vignesh",
   "license": "ISC",
   "dependencies": {
