@@ -13,8 +13,8 @@
     "redux"
   ],
   "repository": {
-      "type": "git",
-      "url": "https://github.com/vigneshjeyaraj/react-webpack.git"
+    "type": "git",
+    "url": "https://github.com/vigneshjeyaraj/react-webpack.git"
   },
   "author": "Vignesh",
   "license": "ISC",

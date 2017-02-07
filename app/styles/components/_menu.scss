@@ -1,0 +1,13 @@
+.menu {
+    height: 50px;
+    .nav {
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 1000;
+        font-size: 16px;
+        line-height: 1.5em;
+        width: 100%;
+        min-width: 768px;
+    }
+}
