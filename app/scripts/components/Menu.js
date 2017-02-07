@@ -3,9 +3,9 @@ import { Component, PropTypes } from 'react';
 export class Menu extends Component {
 
     renderLeftNav() {
-        const listItems = this.props.menuItems.map((item) => {
+        const listItems = this.props.menuItems.map((item) =>
             <li key={item}>{item}</li>
-        });
+        );
         return (
             <ul>{listItems}</ul>
         )
