@@ -4,17 +4,17 @@ export class Menu extends Component {
 
     renderLeftNav() {
         const listItems = this.props.menuItems.map((item) =>
-            <li key={item}>{item}</li>
+            <li className='left-nav-item' key={item}>{item}</li>
         );
         return (
-            <ul>{listItems}</ul>
+            <ul className='left-nav'>{listItems}</ul>
         )
     }
 
     render() {
         return (
           <div className='menu'>
-            <nav className='nav'>
+            <nav className='menu-nav'>
                 {this.renderLeftNav()}
             </nav>
           </div>

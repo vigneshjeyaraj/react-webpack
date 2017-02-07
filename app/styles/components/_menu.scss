@@ -1,6 +1,6 @@
 .menu {
     height: 50px;
-    .nav {
+    .menu-nav {
         position: fixed;
         left: 0;
         top: 0;
@@ -8,6 +8,18 @@
         font-size: 16px;
         line-height: 1.5em;
         width: 100%;
-        min-width: 768px;
+
+        .left-nav {
+            display: table;
+            position: relative;
+            top: -1px;
+            left: 0px;
+
+            .left-nav-item {
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+
     }
 }
