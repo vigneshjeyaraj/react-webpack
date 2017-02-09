@@ -1,13 +1,17 @@
 import React from 'react'
 import { render } from 'react-dom'
-import { P1 } from './app/scripts/components/P1'
+import { Home } from './app/scripts/components/Home'
+import { ContactUs } from './app/scripts/components/ContactUs'
+import { About } from './app/scripts/components/About'
 import { Router, Route, hashHistory} from 'react-router'
 
 window.React = React
 
 render(
   <Router history={hashHistory}>
-    <Route path="/" component={P1}/>
+    <Route path="/" component={Home} />
+    <Route path="contact-us" component={ContactUs}/>
+    <Route path="about" component={About}/>
   </Router>,
   document.getElementById('root')
 );

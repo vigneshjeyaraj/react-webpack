@@ -1,13 +1,28 @@
 import { Component, PropTypes } from 'react';
+import { Link } from 'react-router';
 
 export class Menu extends Component {
 
     renderLeftNav() {
-        const listItems = this.props.menuItems.map((item) =>
-            <li className='left-nav-item' key={item}>{item}</li>
-        );
+
         return (
-            <ul className='left-nav'>{listItems}</ul>
+            <ul className='left-nav'>
+                <li className='left-nav-item' key={this.props.menuItems.home}>
+                    <Link to='/' activeClassName='selected'>
+                        {this.props.menuItems.home}
+                    </Link>
+                </li>
+                <li className='left-nav-item' key={this.props.menuItems.contactus}>
+                    <Link to='/contact-us' activeClassName='selected'>
+                        {this.props.menuItems.contactus}
+                    </Link>
+                </li>
+                <li className='left-nav-item' key={this.props.menuItems.about}>
+                    <Link to='/about' activeClassName='selected'>
+                        {this.props.menuItems.about}
+                    </Link>
+                </li>
+            </ul>
         )
     }
 
@@ -23,9 +38,13 @@ export class Menu extends Component {
 }
 
 Menu.defaultProps = {
-    menuItems: ["Home", "Contact Us", "About"]
+    menuItems: {
+        home: "Home",
+        contactus: "Contact Us",
+        about: "About"
+    }
 }
 
 Menu.propTypes = {
-    menuItems: PropTypes.array
+    menuItems: PropTypes.object
 }

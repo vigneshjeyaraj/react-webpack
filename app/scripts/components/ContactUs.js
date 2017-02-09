@@ -1,14 +1,13 @@
 import { Component, PropTypes } from 'react';
 import { Menu } from './Menu';
-import { P1 } from './P1';
-import { Card } from './P1';
 
-export class Home extends Component {
+export class ContactUs extends Component {
     render() {
         return (
-            <div className='home'>
+            <div>
                 <Menu />
+                <h1>I am ContactUs</h1>
             </div>
-        );
+        )
     }
 }

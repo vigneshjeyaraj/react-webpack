@@ -18,6 +18,11 @@
             .left-nav-item {
                 display: inline-block;
                 vertical-align: middle;
+                padding: 0 32px;
+
+                .selected {
+                    
+                }
             }
         }
 
