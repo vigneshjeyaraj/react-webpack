@@ -6,8 +6,7 @@ export class P1 extends Component {
         return (
 
             <div className='hero-p1'>
-                <Menu />
-                <h1 id='title' className='p1-title'>Hello Vignesh</h1>
+                <img className='p1-image' src='images/mixed_charcoal.jpg' />
             </div>
       )
     }

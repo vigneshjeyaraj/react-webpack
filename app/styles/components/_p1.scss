@@ -1,20 +1,18 @@
-$text-color: #8D8D8D;
-$red-color: #c02f04;
-$blue-color: #18659b;
-$color3: #6ad0c1;
-
 .hero-p1 {
-    height: 600px;
-    position: relative;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: $red-color;
-    width: 100%;
 
     .p1-title {
-        background-color: $blue-color;
+        background-color: $dark-blue;
         color: $text-color;
         font-family: "verdana";
+    }
+
+    .p1-image {
+        height: 600px;
+        position: relative;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: $red;
+        width: 100%;
     }
 }

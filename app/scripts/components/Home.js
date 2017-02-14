@@ -8,6 +8,7 @@ export class Home extends Component {
         return (
             <div className='home'>
                 <Menu />
+                <P1 />
             </div>
         );
     }

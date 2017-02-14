@@ -21,7 +21,9 @@
                 padding: 0 32px;
 
                 .selected {
-                    
+                    font-weight: bold;
+                    border-bottom: 3px solid $blue;
+                    color: $blue;
                 }
             }
         }
