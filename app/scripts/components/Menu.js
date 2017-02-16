@@ -8,17 +8,17 @@ export class Menu extends Component {
         return (
             <ul className='left-nav'>
                 <li className='left-nav-item' key={this.props.menuItems.home}>
-                    <Link to='/' activeClassName='selected'>
+                    <Link to='/' className='left-link' activeClassName='selected'>
                         {this.props.menuItems.home}
                     </Link>
                 </li>
                 <li className='left-nav-item' key={this.props.menuItems.contactus}>
-                    <Link to='/contact-us' activeClassName='selected'>
+                    <Link to='/contact-us' className='left-link' activeClassName='selected'>
                         {this.props.menuItems.contactus}
                     </Link>
                 </li>
                 <li className='left-nav-item' key={this.props.menuItems.about}>
-                    <Link to='/about' activeClassName='selected'>
+                    <Link to='/about' className='left-link' activeClassName='selected'>
                         {this.props.menuItems.about}
                     </Link>
                 </li>
