@@ -1,7 +1,7 @@
 import { Component, PropTypes } from 'react';
 import { Menu } from './Menu';
 import { P1 } from './P1';
-import { Card } from './P1';
+import { CardList } from './CardList';
 
 export class Home extends Component {
     render() {
@@ -9,6 +9,7 @@ export class Home extends Component {
             <div className='home'>
                 <Menu />
                 <P1 />
+                <CardList />
             </div>
         );
     }

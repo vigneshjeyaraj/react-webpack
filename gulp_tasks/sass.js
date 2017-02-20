@@ -5,7 +5,7 @@ module.exports = function(opts) {
     opts = opts || {};
     opts.sass = Object.assign({
         src: {dir: './app/styles/'},
-        dist: {dir: './dist/css/'},
+        dist: {dir: './dist/'},
     }, opts.sass);
 
     gulp.task('sass', function() {
