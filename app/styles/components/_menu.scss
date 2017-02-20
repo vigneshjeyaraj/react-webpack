@@ -21,7 +21,11 @@
             .left-nav-item {
                 display: inline-block;
                 vertical-align: middle;
-                padding: 0 32px;
+                padding: 0 24px;
+
+                @media(min-width: $screen-xs-min) {
+                    padding: 0 32px;
+                }
 
                 .left-link {
                     text-decoration: none;

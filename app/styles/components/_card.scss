@@ -1,7 +1,11 @@
 .card {
-    @extend .app-col-xs-4;
+    @extend .app-col-xs-12;
+    @extend .app-col-sm-6;
+    @extend .app-col-md-4;
+
     text-align: center;
     overflow: hidden;
+    border: 1px solid $light-grey;
 
     .card-image {
         background-position: center;
