@@ -1,13 +1,14 @@
 const webpack = require('webpack');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
+    devtool: 'source-map',
     entry: "./index.js",
     output: {
         path: __dirname + "/dist/assets",
         filename: "bundle.js",
         publicPath: "assets"
     },
-    devtool: 'source-map',
     devServer: {
         inline: true,
         contentBase: "./dist",
@@ -31,8 +32,18 @@ module.exports = {
             {
                 test: /\.scss$/,
                 exclude: /(node_modules)/,
-                loader: 'style-loader!css-loader!autoprefixer-loader!sass-loader'
+                loader: ExtractTextPlugin.extract({
+                    fallback: 'style-loader',
+                    use: [
+                        {loader: 'css-loader',  options: {sourceMap: true}},
+                        {loader: 'autoprefixer-loader'},
+                        {loader: 'sass-loader', options: { sourceMap: true}}
+                    ]
+                })
             }
         ]
-    }
+    },
+    plugins: [
+        new ExtractTextPlugin(__dirname + '/dist/assets/index.css')
+    ]
 }

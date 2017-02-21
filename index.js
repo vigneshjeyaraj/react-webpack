@@ -4,6 +4,7 @@ import { Home } from './app/scripts/components/Home'
 import { ContactUs } from './app/scripts/components/ContactUs'
 import { About } from './app/scripts/components/About'
 import { Router, Route, hashHistory} from 'react-router'
+require('./app/styles/index.scss');
 
 window.React = React
 

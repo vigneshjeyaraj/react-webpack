@@ -1,7 +1,6 @@
 .hero-p1 {
 
     .p1-title {
-        background-color: $dark-blue;
         color: $text-color;
         font-family: "verdana";
     }
@@ -15,7 +14,7 @@
         width: 100%;
 
         @media (min-width: $screen-sm-min) {
-            height: 600px;
+            height: 500px;
         }
 
         @media (max-width: $screen-xs-min) {
